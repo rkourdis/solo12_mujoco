@@ -1,0 +1,34 @@
+<mujoco model="solo12_hip_fe_hl">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="solo12_hip_fe_hl.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_0.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_1.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_2.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_3.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_4.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_5.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_6.obj"/>
+    <mesh file="solo12_hip_fe_hl_collision_7.obj"/>
+  </asset>
+  <worldbody>
+    <body name="solo12_hip_fe_hl">
+      <geom mesh="solo12_hip_fe_hl" class="visual"/>
+      <geom mesh="solo12_hip_fe_hl_collision_0" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_1" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_2" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_3" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_4" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_5" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_6" class="collision"/>
+      <geom mesh="solo12_hip_fe_hl_collision_7" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,41 @@
+<mujoco model="solo_lower_leg_v2_left_side">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="material_0" specular="1.0" shininess="0.0" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="material_1" specular="1.0" shininess="0.0" rgba="1.000000 0.549020 0.286275 1.0"/>
+    <material name="material_2" specular="1.0" shininess="0.0" rgba="0.549020 0.549020 0.549020 1.0"/>
+    <mesh file="solo_lower_leg_v2_left_side_0.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_1.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_2.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_0.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_1.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_2.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_3.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_4.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_5.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_6.obj"/>
+    <mesh file="solo_lower_leg_v2_left_side_collision_7.obj"/>
+  </asset>
+  <worldbody>
+    <body name="solo_lower_leg_v2_left_side">
+      <geom mesh="solo_lower_leg_v2_left_side_0" material="material_2" class="visual"/>
+      <geom mesh="solo_lower_leg_v2_left_side_1" material="material_1" class="visual"/>
+      <geom mesh="solo_lower_leg_v2_left_side_2" material="material_0" class="visual"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_0" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_1" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_2" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_3" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_4" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_5" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_6" class="collision"/>
+      <geom mesh="solo_lower_leg_v2_left_side_collision_7" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

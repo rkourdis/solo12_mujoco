@@ -1,0 +1,158 @@
+<mujoco model="solo">
+  <compiler angle="radian" meshdir="meshes/" discardvisual="true" fusestatic="false"/>
+  <statistic meansize="0.0982686" extent="0.608773" center="0 2.74191e-05 -0.0510751"/>
+
+  <!--
+        Collision / visual meshes used during the simulation.
+        Retrieved from URDF in robot_properties_solo.
+  -->
+  <asset>
+    <mesh name="solo_12_base" file="collision/solo_12_base.stl"/>
+    <mesh name="solo12_hip_fe_fl" file="collision/solo12_hip_fe_fl.stl"/>
+    <mesh name="solo_upper_leg_left_side" file="collision/solo_upper_leg_left_side.stl"/>
+    <mesh name="solo_lower_leg_v2_left_side" file="collision/solo_lower_leg_v2_left_side.stl"/>
+    <mesh name="solo12_hip_fe_fr" file="collision/solo12_hip_fe_fr.stl"/>
+    <mesh name="solo_upper_leg_right_side" file="collision/solo_upper_leg_right_side.stl"/>
+    <mesh name="solo_lower_leg_v2_right_side" file="collision/solo_lower_leg_v2_right_side.stl"/>
+    <mesh name="solo12_hip_fe_hl" file="collision/solo12_hip_fe_hl.stl"/>
+    <mesh name="solo12_hip_fe_hr" file="collision/solo12_hip_fe_hr.stl"/>
+  </asset>
+
+  <!-- Inertial parameters converted to principal axes by MuJoCo compiler -->
+  <worldbody>
+    <!-- Robot base -->
+    <body name="base_link">
+      <inertial pos="-0.00082966 1.05e-06 -0.0006021" quat="-0.00116678 0.706653 0.00115432 0.707559" mass="1.25124" diaginertia="0.0160537 0.0138852 0.00266206"/>
+      <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_12_base"/>
+
+      <!-- Front left shoulder  -->
+      <body name="FL_SHOULDER" pos="0.2141 0.0875 0">
+        <inertial pos="-0.0940725 -0.00438935 1.384e-05" quat="0.525393 0.524526 0.474075 0.473379" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
+        <joint name="FL_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
+        <geom pos="0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fl"/>
+
+        <!-- Front left upper leg -->
+        <body name="FL_UPPER_LEG" pos="-0.0195 0.014 0">
+          <inertial pos="1.53e-05 0.0176764 -0.0783823" quat="0.705254 -0.0412383 0.0411345 0.706558" mass="0.147373" diaginertia="0.000421743 0.0004154 2.44467e-05"/>
+          <joint name="FL_HFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+          <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_upper_leg_left_side"/>
+
+          <!-- Front left lower leg -->
+          <body name="FL_LOWER_LEG" pos="0 0.03745 -0.16">
+            <inertial pos="0 0.00776716 -0.0700388" quat="0.707057 -0.00837059 0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
+            <joint name="FL_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_left_side"/>
+
+            <!-- TODO: Figure out what happened to FL_ANKLE --> 
+            <!-- TODO: I think this is the contact position with the ground? --> 
+            <!-- Front left foot, massless -->
+            <body name="FL_FOOT" pos="0 0.009 -0.16">
+              <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+      <!-- Front right shoulder  -->
+      <body name="FR_SHOULDER" pos="0.2141 -0.0875 0">
+        <inertial pos="-0.0940725 0.00438935 -1.384e-05" quat="0.474075 0.473379 0.525393 0.524526" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
+        <joint name="FR_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
+        <geom pos="0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fr"/>
+
+        <!-- Front right upper leg -->
+        <body name="FR_UPPER_LEG" pos="-0.0195 -0.014 0">
+          <inertial pos="-1.53e-05 -0.0176764 -0.0783823" quat="0.705254 0.0412383 -0.0411345 0.706558" mass="0.147373" diaginertia="0.000421743 0.0004154 2.44467e-05"/>
+          <joint name="FR_HFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+          <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_upper_leg_right_side"/>
+
+          <!-- Front right lower leg -->
+          <body name="FR_LOWER_LEG" pos="0 -0.03745 -0.16">
+            <inertial pos="0 -0.00776716 -0.0700388" quat="0.707057 0.00837059 -0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
+            <joint name="FR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/>
+
+            <!-- Front right foot, massless -->
+            <body name="FR_FOOT" pos="0 -0.009 -0.16">
+              <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+      <!-- Hind left shoulder  -->
+      <body name="HL_SHOULDER" pos="-0.2141 0.0875 0">
+        <inertial pos="0.0940725 -0.00438935 -1.384e-05" quat="0.473379 0.474075 0.524526 0.525393" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
+        <joint name="HL_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
+        <geom pos="-0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hl"/>
+
+        <!-- Hind left upper leg  -->
+        <body name="HL_UPPER_LEG" pos="0.0195 0.014 0">
+          <inertial pos="1.53e-05 0.0176764 -0.0783823" quat="0.705254 -0.0412383 0.0411345 0.706558" mass="0.147373" diaginertia="0.000421743 0.0004154 2.44467e-05"/>
+          <joint name="HL_HFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+          <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_upper_leg_left_side"/>
+
+          <!-- Hind left lower leg  -->
+          <body name="HL_LOWER_LEG" pos="0 0.03745 -0.16">
+            <inertial pos="0 0.00776716 -0.0700388" quat="0.707057 -0.00837059 0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
+            <joint name="HL_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_left_side"/>
+
+            <!-- Hind left foot, massless  -->
+            <body name="HL_FOOT" pos="0 0.009 -0.16">
+              <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+      <!-- Hind right shoulder  -->
+      <body name="HR_SHOULDER" pos="-0.2141 -0.0875 0">
+        <inertial pos="0.0940725 0.00438935 1.384e-05" quat="0.524526 0.525393 0.473379 0.474075" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
+        <joint name="HR_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
+        <geom pos="-0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hr"/>
+
+        <!-- Hind right upper leg  -->
+        <body name="HR_UPPER_LEG" pos="0.0195 -0.014 0">
+          <inertial pos="-1.53e-05 -0.0176764 -0.0783823" quat="0.705254 0.0412383 -0.0411345 0.706558" mass="0.147373" diaginertia="0.000421743 0.0004154 2.44467e-05"/>
+          <joint name="HR_HFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+          <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_upper_leg_right_side"/>
+
+          <!-- Hind right lower leg  -->
+          <body name="HR_LOWER_LEG" pos="0 -0.03745 -0.16">
+            <inertial pos="0 -0.00776716 -0.0700388" quat="0.707057 0.00837059 -0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
+            <joint name="HR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
+            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/>
+
+            <!-- Hind right foot, massless  -->
+            <body name="HR_FOOT" pos="0 -0.009 -0.16">
+              <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <!-- Collision exclusion from SRDF (robot_properties_solo) -->
+  <contact>
+    <!-- The base should not block shoulder rotation -->
+    <exclude body1="FL_SHOULDER" body2="base_link"/>
+    <exclude body1="FR_SHOULDER" body2="base_link"/>
+    <exclude body1="HL_SHOULDER" body2="base_link"/>
+    <exclude body1="HR_SHOULDER" body2="base_link"/>
+
+    <!-- Exclude collisions of adjacent components -->
+    <!-- Shoulders and upper legs -->
+    <exclude body1="FL_UPPER_LEG" body2="FL_SHOULDER"/>
+    <exclude body1="FR_UPPER_LEG" body2="FR_SHOULDER"/>
+    <exclude body1="HL_UPPER_LEG" body2="HL_SHOULDER"/>
+    <exclude body1="HR_UPPER_LEG" body2="HR_SHOULDER"/>
+
+    <!-- Upper legs and lower legs -->
+    <exclude body1="FL_LOWER_LEG" body2="FL_UPPER_LEG"/>
+    <exclude body1="FR_LOWER_LEG" body2="FR_UPPER_LEG"/>
+    <exclude body1="HL_LOWER_LEG" body2="HL_UPPER_LEG"/>
+    <exclude body1="HR_LOWER_LEG" body2="HR_UPPER_LEG"/>
+  </contact>
+
+</mujoco>
