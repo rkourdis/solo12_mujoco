@@ -35,8 +35,8 @@
 - Removed unnecessary materials and extracted them in a common asset file:
   
   - `TODO`
-  
-  - 
+
+- Simplified by using a single mesh file but rotated
 
 ### Collisions
 
@@ -49,5 +49,29 @@
   ```
   
   - Multiple iterations to avoid crashes during compilation due to weird decompositions
+
+
+
+### Failed Attempts
+
+1. Using AO to simplify meshes easily:
+   
+   - Didn't preserve colours, see stackoverflow
+
+2- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

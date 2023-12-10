@@ -8,59 +8,47 @@
     </default>
   </default>
   <asset>
-    <material name="solo_12_base_material_0" specular="1.0" shininess="0.0" rgba="0.549020 0.549020 0.549020 1.0"/>
-    <material name="solo_12_base_material_1" specular="1.0" shininess="0.0" rgba="0.752941 0.752941 0.752941 1.0"/>
-    <material name="solo_12_base_material_2" specular="1.0" shininess="0.0" rgba="1.000000 1.000000 1.000000 1.0"/>
-    <material name="solo_12_base_material_3" specular="1.0" shininess="0.0" rgba="0.501961 0.501961 0.501961 1.0"/>
-    <material name="solo_12_base_material_4" specular="1.0" shininess="0.0" rgba="0.764706 0.000000 0.890196 1.0"/>
-    <material name="solo_12_base_material_5" specular="1.0" shininess="0.0" rgba="0.929412 0.929412 0.929412 1.0"/>
-    <material name="solo_12_base_material_6" specular="1.0" shininess="0.0" rgba="0.407843 0.427451 0.486275 1.0"/>
-    <material name="solo_12_base_material_7" specular="1.0" shininess="0.0" rgba="0.501961 1.000000 0.501961 1.0"/>
-    <material name="solo_12_base_material_8" specular="1.0" shininess="0.0" rgba="1.000000 0.976471 0.121569 1.0"/>
-    <material name="solo_12_base_material_9" specular="1.0" shininess="0.0" rgba="0.627451 0.627451 0.627451 1.0"/>
-    <material name="solo_12_base_material_10" specular="1.0" shininess="0.0" rgba="0.337255 0.337255 0.337255 1.0"/>
-    <material name="solo_12_base_material_11" specular="1.0" shininess="0.0" rgba="0.250980 0.250980 0.250980 1.0"/>
-    <material name="solo_12_base_material_12" specular="1.0" shininess="0.0" rgba="1.000000 0.623529 0.639216 1.0"/>
-    <material name="solo_12_base_material_13" specular="1.0" shininess="0.0" rgba="0.996078 1.000000 0.498039 1.0"/>
-    <material name="solo_12_base_material_14" specular="1.0" shininess="0.0" rgba="0.898039 0.898039 0.898039 1.0"/>
-    <material name="solo_12_base_material_15" specular="1.0" shininess="0.0" rgba="0.752941 1.000000 0.752941 1.0"/>
-    <material name="solo_12_base_material_16" specular="1.0" shininess="0.0" rgba="0.596078 0.603922 0.709804 1.0"/>
-    <material name="solo_12_base_material_17" specular="1.0" shininess="0.0" rgba="0.858824 0.858824 0.858824 1.0"/>
-    <material name="solo_12_base_material_18" specular="1.0" shininess="0.0" rgba="0.376471 0.376471 0.376471 1.0"/>
-    <material name="solo_12_base_material_19" specular="1.0" shininess="0.0" rgba="1.000000 0.713726 0.219608 1.0"/>
-    <material name="solo_12_base_material_20" specular="1.0" shininess="0.0" rgba="0.949020 0.949020 0.949020 1.0"/>
-    <material name="solo_12_base_material_21" specular="1.0" shininess="0.0" rgba="0.792157 0.819608 0.933333 1.0"/>
-    <material name="solo_12_base_material_22" specular="1.0" shininess="0.0" rgba="1.000000 1.000000 0.000000 1.0"/>
-    <material name="solo_12_base_material_23" specular="1.0" shininess="0.0" rgba="1.000000 0.501961 0.501961 1.0"/>
-    <material name="solo_12_base_material_24" specular="1.0" shininess="0.0" rgba="0.960784 1.000000 0.403922 1.0"/>
-    <material name="solo_12_base_material_25" specular="1.0" shininess="0.0" rgba="0.654902 0.823529 1.000000 1.0"/>
-    <material name="solo_12_base_material_26" specular="1.0" shininess="0.0" rgba="0.752941 1.000000 1.000000 1.0"/>
-    <material name="solo_12_base_material_27" specular="1.0" shininess="0.0" rgba="1.000000 1.000000 0.501961 1.0"/>
-    <mesh file="solo12_base_0.obj"/>
-    <mesh file="solo12_base_1.obj"/>
-    <mesh file="solo12_base_2.obj"/>
-    <mesh file="solo12_base_3.obj"/>
-    <mesh file="solo12_base_4.obj"/>
-    <mesh file="solo12_base_5.obj"/>
-    <mesh file="solo12_base_6.obj"/>
+    <material name="solo_12_base_material_0" specular="0.0" shininess="0.0" rgba="0.549020 0.549020 0.549020 1.0"/>
+    <material name="solo_12_base_material_1" specular="0.0" shininess="0.0" rgba="0.752941 0.752941 0.752941 1.0"/>
+    <material name="solo_12_base_material_2" specular="0.0" shininess="0.0" rgba="1.000000 1.000000 1.000000 1.0"/>
+    <material name="solo_12_base_material_3" specular="0.0" shininess="0.0" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="solo_12_base_material_4" specular="0.0" shininess="0.0" rgba="0.764706 0.000000 0.890196 1.0"/>
+    <material name="solo_12_base_material_5" specular="0.0" shininess="0.0" rgba="0.929412 0.929412 0.929412 1.0"/>
+    <material name="solo_12_base_material_6" specular="0.0" shininess="0.0" rgba="0.407843 0.427451 0.486275 1.0"/>
+    <material name="solo_12_base_material_7" specular="0.0" shininess="0.0" rgba="0.501961 1.000000 0.501961 1.0"/>
+    <material name="solo_12_base_material_8" specular="0.0" shininess="0.0" rgba="1.000000 0.976471 0.121569 1.0"/>
+    <material name="solo_12_base_material_9" specular="0.0" shininess="0.0" rgba="0.627451 0.627451 0.627451 1.0"/>
+    <material name="solo_12_base_material_10" specular="0.0" shininess="0.0" rgba="0.337255 0.337255 0.337255 1.0"/>
+    <material name="solo_12_base_material_11" specular="0.0" shininess="0.0" rgba="0.250980 0.250980 0.250980 1.0"/>
+    <material name="solo_12_base_material_12" specular="0.0" shininess="0.0" rgba="1.000000 0.623529 0.639216 1.0"/> <!-- bearing pink -->
+    <material name="solo_12_base_material_13" specular="0.0" shininess="0.0" rgba="0.996078 1.000000 0.498039 1.0"/>
+    <material name="solo_12_base_material_14" specular="0.0" shininess="0.0" rgba="0.898039 0.898039 0.898039 1.0"/>
+    <material name="solo_12_base_material_15" specular="0.0" shininess="0.0" rgba="0.752941 1.000000 0.752941 1.0"/>
+    <material name="solo_12_base_material_16" specular="0.0" shininess="0.0" rgba="0.596078 0.603922 0.709804 1.0"/>
+    <material name="solo_12_base_material_17" specular="0.0" shininess="0.0" rgba="0.858824 0.858824 0.858824 1.0"/>
+    <material name="solo_12_base_material_18" specular="0.0" shininess="0.0" rgba="0.376471 0.376471 0.376471 1.0"/>
+    <material name="solo_12_base_material_19" specular="0.0" shininess="0.6" rgba="1.000000 0.713726 0.219608 1.0"/>
+    <material name="solo_12_base_material_20" specular="0.0" shininess="0.0" rgba="0.949020 0.949020 0.949020 1.0"/>
+    <material name="solo_12_base_material_21" specular="0.0" shininess="0.0" rgba="0.792157 0.819608 0.933333 1.0"/>
+    <material name="solo_12_base_material_22" specular="0.0" shininess="0.0" rgba="1.000000 1.000000 0.000000 1.0"/>
+    <material name="solo_12_base_material_23" specular="0.0" shininess="0.0" rgba="1.000000 0.501961 0.501961 1.0"/>
+    <material name="solo_12_base_material_24" specular="0.0" shininess="0.0" rgba="0.960784 1.000000 0.403922 1.0"/>
+    <material name="solo_12_base_material_25" specular="0.0" shininess="0.0" rgba="0.654902 0.823529 1.000000 1.0"/>
+    <material name="solo_12_base_material_26" specular="0.0" shininess="0.0" rgba="0.752941 1.000000 1.000000 1.0"/>
+    <material name="solo_12_base_material_27" specular="0.0" shininess="0.0" rgba="1.000000 1.000000 0.501961 1.0"/>
     <mesh file="solo12_base_7.obj"/>
-    <mesh file="solo12_base_8.obj"/>
-    <mesh file="solo12_base_9.obj"/>
+    <mesh file="solo12_base_8_simple.obj"/>
     <mesh file="solo12_base_10.obj"/>
-    <mesh file="solo12_base_11.obj"/>
-    <mesh file="solo12_base_12.obj"/>
-    <mesh file="solo12_base_13.obj"/>
-    <mesh file="solo12_base_14.obj"/>
-    <mesh file="solo12_base_15.obj"/>
-    <mesh file="solo12_base_16.obj"/>
+    <mesh file="solo12_base_13_simple.obj"/>
+    <mesh file="solo12_base_15_simple.obj"/>
     <mesh file="solo12_base_17.obj"/>
     <mesh file="solo12_base_18.obj"/>
     <mesh file="solo12_base_19.obj"/>
-    <mesh file="solo12_base_20.obj"/>
-    <mesh file="solo12_base_21.obj"/>
-    <mesh file="solo12_base_22.obj"/>
+    <mesh file="solo12_base_20_simple.obj"/>
+    <mesh file="solo12_base_21_simple.obj"/>
+    <mesh file="solo12_base_22_simple.obj"/>
     <mesh file="solo12_base_23.obj"/>
-    <mesh file="solo12_base_24.obj"/>
+    <mesh file="solo12_base_24_simple.obj"/>
     <mesh file="solo12_base_25.obj"/>
     <mesh file="solo12_base_26.obj"/>
     <mesh file="solo12_base_27.obj"/>
@@ -77,36 +65,36 @@
     <mesh file="solo_12_base_collision_10.obj"/>
     <mesh file="solo_12_base_collision_11.obj"/>
   </asset>
+  
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="120" elevation="-20"/>
+  </visual>
+  
   <worldbody>
-    <body name="solo_12_base">
-      <geom mesh="solo12_base_0" material="solo_12_base_material_27" class="visual"/>
-      <geom mesh="solo12_base_1" material="solo_12_base_material_26" class="visual"/>
-      <geom mesh="solo12_base_2" material="solo_12_base_material_25" class="visual"/>
-      <geom mesh="solo12_base_3" material="solo_12_base_material_24" class="visual"/>
-      <geom mesh="solo12_base_4" material="solo_12_base_material_23" class="visual"/>
-      <geom mesh="solo12_base_5" material="solo_12_base_material_22" class="visual"/>
-      <geom mesh="solo12_base_6" material="solo_12_base_material_21" class="visual"/>
+	<light name="spotlight" mode="targetbodycom" target="solo_12_base" pos="0 -1 4" cutoff="30"/>
+    <light pos="0 0 4" dir="0 0 -1" directional="true"/>
+	<body name="solo_12_base">
+	  
+	  <!-- TODO: I accidentally deleted the coupling things -->
+	  
       <geom mesh="solo12_base_7" material="solo_12_base_material_20" class="visual"/>
-      <geom mesh="solo12_base_8" material="solo_12_base_material_19" class="visual"/>
-      <geom mesh="solo12_base_9" material="solo_12_base_material_18" class="visual"/>
+      <geom mesh="solo12_base_8_simple" material="solo_12_base_material_19" class="visual"/> <!-- Stator Coils -->
       <geom mesh="solo12_base_10" material="solo_12_base_material_17" class="visual"/>
-      <geom mesh="solo12_base_11" material="solo_12_base_material_16" class="visual"/>
-      <geom mesh="solo12_base_12" material="solo_12_base_material_15" class="visual"/>
-      <geom mesh="solo12_base_13" material="solo_12_base_material_14" class="visual"/>
-      <geom mesh="solo12_base_14" material="solo_12_base_material_13" class="visual"/>
-      <geom mesh="solo12_base_15" material="solo_12_base_material_12" class="visual"/>
-      <geom mesh="solo12_base_16" material="solo_12_base_material_11" class="visual"/>
+      <geom mesh="solo12_base_13_simple" material="solo_12_base_material_14" class="visual"/>
+      <geom mesh="solo12_base_15_simple" material="solo_12_base_material_12" class="visual"/>
       <geom mesh="solo12_base_17" material="solo_12_base_material_10" class="visual"/>
-      <geom mesh="solo12_base_18" material="solo_12_base_material_9" class="visual"/>
-      <geom mesh="solo12_base_19" material="solo_12_base_material_8" class="visual"/>
-      <geom mesh="solo12_base_20" material="solo_12_base_material_7" class="visual"/>
-      <geom mesh="solo12_base_21" material="solo_12_base_material_6" class="visual"/>
-      <geom mesh="solo12_base_22" material="solo_12_base_material_5" class="visual"/>
-      <geom mesh="solo12_base_23" material="solo_12_base_material_4" class="visual"/>
-      <geom mesh="solo12_base_24" material="solo_12_base_material_3" class="visual"/>
-      <geom mesh="solo12_base_25" material="solo_12_base_material_2" class="visual"/>
-      <geom mesh="solo12_base_26" material="solo_12_base_material_1" class="visual"/>
-      <geom mesh="solo12_base_27" material="solo_12_base_material_0" class="visual"/>
+      <geom mesh="solo12_base_18" material="solo_12_base_material_9" class="visual"/>	<!-- IMU Housing -->
+      <geom mesh="solo12_base_19" material="solo_12_base_material_8" class="visual"/>	<!-- Tiny PCB Components -->
+      <geom mesh="solo12_base_20_simple" material="solo_12_base_material_7" class="visual"/>	<!-- Motor Drivers -->
+      <geom mesh="solo12_base_21_simple" material="solo_12_base_material_6" class="visual"/>	<!-- Screws -->
+      <geom mesh="solo12_base_22_simple" material="solo_12_base_material_5" class="visual"/>	<!-- PCB Components and separators-->
+      <geom mesh="solo12_base_23" material="solo_12_base_material_4" class="visual"/>   <!-- Master Board -->
+      <geom mesh="solo12_base_24_simple" material="solo_12_base_material_3" class="visual"/>	<!-- PCB Components, Rotors, Screws -->
+      <geom mesh="solo12_base_25" material="solo_12_base_material_2" class="visual"/>	<!-- USB & PCB Components-->
+      <geom mesh="solo12_base_26" material="solo_12_base_material_1" class="visual"/>	
+      <geom mesh="solo12_base_27" material="solo_12_base_material_0" class="visual"/>	<!-- Main plastic body -->
       <geom mesh="solo_12_base_collision_0" class="collision"/>
       <geom mesh="solo_12_base_collision_1" class="collision"/>
       <geom mesh="solo_12_base_collision_2" class="collision"/>
