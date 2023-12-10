@@ -1,5 +1,5 @@
 <mujoco model="solo">
-  <compiler angle="radian" meshdir="meshes/" discardvisual="true" fusestatic="false"/>
+  <compiler angle="radian" meshdir="meshes/solo_12_base" discardvisual="true" fusestatic="false"/>
   <statistic meansize="0.0982686" extent="0.608773" center="0 2.74191e-05 -0.0510751"/>
 
   <!--

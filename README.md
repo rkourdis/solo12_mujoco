@@ -50,8 +50,6 @@
   
   - Multiple iterations to avoid crashes during compilation due to weird decompositions
 
-
-
 ### Failed Attempts
 
 1. Using AO to simplify meshes easily:
@@ -59,19 +57,3 @@
    - Didn't preserve colours, see stackoverflow
 
 2- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
