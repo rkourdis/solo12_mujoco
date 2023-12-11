@@ -34,4 +34,9 @@
     <material name="solo_lower_leg_v2_right_side_material_1" specular="1.0" shininess="0.0" rgba="1.000000 0.549020 0.286275 1.0"/>
     <material name="solo_lower_leg_v2_right_side_material_2" specular="1.0" shininess="0.0" rgba="0.549020 0.549020 0.549020 1.0"/>
 
+	<!-- solo_lower_leg_v2_left_side -->
+    <material name="solo_lower_leg_v2_left_side_material_0" specular="1.0" shininess="0.0" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="solo_lower_leg_v2_left_side_material_1" specular="1.0" shininess="0.0" rgba="1.000000 0.549020 0.286275 1.0"/>
+    <material name="solo_lower_leg_v2_left_side_material_2" specular="1.0" shininess="0.0" rgba="0.549020 0.549020 0.549020 1.0"/>
+
 </materials>
