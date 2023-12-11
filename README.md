@@ -20,7 +20,7 @@
   
   - `something about 3mf saved to obj not working in obj2mjcf, why did I export to 3mf? for the axes?`
 
-- Ran `obj2mjcf` on visuals to separate materials:
+- Ran `obj2mjcf` on visuals to separate submeshes with the same material:
   
   ```
   obj2mjcf --obj-dir ./ --save-mjcf --compile-model --verbose
@@ -44,14 +44,19 @@
 
 - Ran `obj2mjcf`the simplified meshes to convex decompose:
   
-  ```bash
-   obj2mjcf --obj-dir .\obj\ --save-mjcf --compile-model --verbose --vhacd-args.enable --vhacd-args.max-output-convex-hulls 16 --vhacd-args.max-hull-vert-count 128 --vhacd-args.split-hull --vhacd-args.voxel-resolution 1000000 --vhacd-args.volume-error-percent 0.1 --overwrite
-  ```
+  - For the base (*more complicated, use more submeshes*):
+    
+    ```
+     obj2mjcf --obj-dir .\ --save-mjcf --compile-model --verbose --vhacd-args.enable --vhacd-args.max-output-convex-hulls 12 --vhacd-args.max-hull-vert-count 256 --vhacd-args.split-hull --vhacd-args.voxel-resolution 1000000 --vhacd-args.volume-error-percent 0.01 --overwrite --obj-filter "solo_12_base.obj"
+    ```
   
-  - Multiple iterations to avoid crashes during compilation due to weird decompositions
-
-### Failed Attempts
-
+  - For the other models:
+    
+    ```
+    obj2mjcf --obj-dir .\ --save-mjcf --compile-model --verbose --vhacd-args.enable --vhacd-args.max-output-convex-hulls 6 --vhacd-args.max-hull-vert-count 256 --vhacd-args.split-hull --vhacd-args.voxel-resolution 5000000 --vhacd-args.volume-error-percent 0.1
+    ```
+    
+    
 1. Using AO to simplify meshes easily:
    
    - Didn't preserve colours, see stackoverflow
