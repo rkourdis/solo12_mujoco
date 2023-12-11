@@ -1,21 +1,30 @@
 <mujoco model="solo">
-  <compiler angle="radian" meshdir="meshes/solo_12_base" discardvisual="true" fusestatic="false"/>
+  <compiler angle="radian" meshdir="meshes/" fusestatic="false"/>
   <statistic meansize="0.0982686" extent="0.608773" center="0 2.74191e-05 -0.0510751"/>
 
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  
   <!--
         Collision / visual meshes used during the simulation.
         Retrieved from URDF in robot_properties_solo.
   -->
   <asset>
-    <mesh name="solo_12_base" file="collision/solo_12_base.stl"/>
-    <mesh name="solo12_hip_fe_fl" file="collision/solo12_hip_fe_fl.stl"/>
-    <mesh name="solo_upper_leg_left_side" file="collision/solo_upper_leg_left_side.stl"/>
-    <mesh name="solo_lower_leg_v2_left_side" file="collision/solo_lower_leg_v2_left_side.stl"/>
-    <mesh name="solo12_hip_fe_fr" file="collision/solo12_hip_fe_fr.stl"/>
-    <mesh name="solo_upper_leg_right_side" file="collision/solo_upper_leg_right_side.stl"/>
-    <mesh name="solo_lower_leg_v2_right_side" file="collision/solo_lower_leg_v2_right_side.stl"/>
-    <mesh name="solo12_hip_fe_hl" file="collision/solo12_hip_fe_hl.stl"/>
-    <mesh name="solo12_hip_fe_hr" file="collision/solo12_hip_fe_hr.stl"/>
+	<include file="meshes/meshes.xml"/>
+	<include file="meshes/materials.xml"/>	
+    <mesh name="solo12_hip_fe_fl" file="collision/solo12_hip_fe_fl.obj"/>
+    <mesh name="solo_upper_leg_left_side" file="collision/solo_upper_leg_left_side.obj"/>
+    <mesh name="solo_lower_leg_v2_left_side" file="collision/solo_lower_leg_v2_left_side.obj"/>
+    <mesh name="solo12_hip_fe_fr" file="collision/solo12_hip_fe_fr.obj"/>
+    <mesh name="solo_upper_leg_right_side" file="collision/solo_upper_leg_right_side.obj"/>
+    <mesh name="solo12_hip_fe_hl" file="collision/solo12_hip_fe_hl.obj"/>
+    <mesh name="solo12_hip_fe_hr" file="collision/solo12_hip_fe_hr.obj"/>
   </asset>
 
   <!-- Inertial parameters converted to principal axes by MuJoCo compiler -->
@@ -23,13 +32,14 @@
     <!-- Robot base -->
     <body name="base_link">
       <inertial pos="-0.00082966 1.05e-06 -0.0006021" quat="-0.00116678 0.706653 0.00115432 0.707559" mass="1.25124" diaginertia="0.0160537 0.0138852 0.00266206"/>
-      <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_12_base"/>
+      <!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_12_base"/> -->
+	  <include file="meshes/solo_12_base/solo_12_base.xml"/>
 
       <!-- Front left shoulder  -->
       <body name="FL_SHOULDER" pos="0.2141 0.0875 0">
         <inertial pos="-0.0940725 -0.00438935 1.384e-05" quat="0.525393 0.524526 0.474075 0.473379" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
         <joint name="FL_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
-        <geom pos="0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fl"/>
+		<geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fl"/>
 
         <!-- Front left upper leg -->
         <body name="FL_UPPER_LEG" pos="-0.0195 0.014 0">
@@ -57,7 +67,7 @@
       <body name="FR_SHOULDER" pos="0.2141 -0.0875 0">
         <inertial pos="-0.0940725 0.00438935 -1.384e-05" quat="0.474075 0.473379 0.525393 0.524526" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
         <joint name="FR_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
-        <geom pos="0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fr"/>
+        <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fr"/>
 
         <!-- Front right upper leg -->
         <body name="FR_UPPER_LEG" pos="-0.0195 -0.014 0">
@@ -69,7 +79,10 @@
           <body name="FR_LOWER_LEG" pos="0 -0.03745 -0.16">
             <inertial pos="0 -0.00776716 -0.0700388" quat="0.707057 0.00837059 -0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
             <joint name="FR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
-            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/>
+            <!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/> -->
+			
+			<!-- Multiple imports are not supported. Use PyMJCF instead. -->
+			<include file="meshes/solo_lower_leg_v2_right_side/solo_lower_leg_v2_right_side_0.xml"/>
 
             <!-- Front right foot, massless -->
             <body name="FR_FOOT" pos="0 -0.009 -0.16">
@@ -83,7 +96,7 @@
       <body name="HL_SHOULDER" pos="-0.2141 0.0875 0">
         <inertial pos="0.0940725 -0.00438935 -1.384e-05" quat="0.473379 0.474075 0.524526 0.525393" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
         <joint name="HL_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
-        <geom pos="-0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hl"/>
+        <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hl"/>
 
         <!-- Hind left upper leg  -->
         <body name="HL_UPPER_LEG" pos="0.0195 0.014 0">
@@ -109,7 +122,7 @@
       <body name="HR_SHOULDER" pos="-0.2141 -0.0875 0">
         <inertial pos="0.0940725 0.00438935 1.384e-05" quat="0.524526 0.525393 0.473379 0.474075" mass="0.14196" diaginertia="0.000386433 0.0003805 2.42272e-05"/>
         <joint name="HR_HAA" pos="0 0 0" axis="1 0 0" range="-10 10"/>
-        <geom pos="-0.0195 0 0" type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hr"/>
+        <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hr"/>
 
         <!-- Hind right upper leg  -->
         <body name="HR_UPPER_LEG" pos="0.0195 -0.014 0">
@@ -121,7 +134,8 @@
           <body name="HR_LOWER_LEG" pos="0 -0.03745 -0.16">
             <inertial pos="0 -0.00776716 -0.0700388" quat="0.707057 0.00837059 -0.00837059 0.707057" mass="0.0231829" diaginertia="8.58474e-05 8.508e-05 1.34264e-06"/>
             <joint name="HR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
-            <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/>
+            <!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_lower_leg_v2_right_side"/> -->
+			<include file="meshes/solo_lower_leg_v2_right_side/solo_lower_leg_v2_right_side_1.xml"/>
 
             <!-- Hind right foot, massless  -->
             <body name="HR_FOOT" pos="0 -0.009 -0.16">
