@@ -18,6 +18,10 @@
   <asset>
 	<include file="meshes/meshes.xml"/>
 	<include file="meshes/materials.xml"/>	
+	
+	<!-- TODO: Add programmatically: -->
+	<mesh file="hip_adapter/hip_adapter.obj"/>
+	<material name="hip_adapter_material_0" specular="0.2" shininess="0.1" rgba="0.349020 0.349020 0.349020 1.0"/>
   </asset>
 
   <!-- Inertial parameters converted to principal axes by MuJoCo compiler -->
@@ -69,6 +73,7 @@
 		
         <!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_fr"/> -->
 		<include file="meshes/solo12_hip_fe_fr/solo12_hip_fe_fr.xml"/>
+		<geom material="hip_adapter_material_0" mesh="hip_adapter" pos="-0.1875 0.0 0.0" class="visual"/>
 
         <!-- Front right upper leg -->
         <body name="FR_UPPER_LEG" pos="-0.0195 -0.014 0">
@@ -102,6 +107,7 @@
         
 		<!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo12_hip_fe_hl"/> -->
 		<include file="meshes/solo12_hip_fe_hl/solo12_hip_fe_hl.xml"/>
+		<geom material="hip_adapter_material_0" mesh="hip_adapter" pos="0.1875 0.0 0.0" euler="0.0 0.0 3.1415" class="visual"/>
 
         <!-- Hind left upper leg  -->
         <body name="HL_UPPER_LEG" pos="0.0195 0.014 0">
