@@ -1,0 +1,29 @@
+<mujoco model="solo12_hip_fe_fr">
+  <geom mesh="solo12_hip_fe_fr_0" material="solo12_hip_fe_fr_material_19" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_1" material="solo12_hip_fe_fr_material_18" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_2" material="solo12_hip_fe_fr_material_17" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_3" material="solo12_hip_fe_fr_material_16" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_4" material="solo12_hip_fe_fr_material_15" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_5" material="solo12_hip_fe_fr_material_14" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_6" material="solo12_hip_fe_fr_material_13" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_7" material="solo12_hip_fe_fr_material_12" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_8" material="solo12_hip_fe_fr_material_11" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_9" material="solo12_hip_fe_fr_material_10" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_10" material="solo12_hip_fe_fr_material_9" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_11" material="solo12_hip_fe_fr_material_8" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_12" material="solo12_hip_fe_fr_material_7" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_13" material="solo12_hip_fe_fr_material_6" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_14" material="solo12_hip_fe_fr_material_5" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_15" material="solo12_hip_fe_fr_material_4" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_16" material="solo12_hip_fe_fr_material_3" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_17" material="solo12_hip_fe_fr_material_2" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_18" material="solo12_hip_fe_fr_material_1" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_19" material="solo12_hip_fe_fr_material_0" class="visual"/>
+  <geom mesh="solo12_hip_fe_fr_collision_0" class="collision"/>
+  <geom mesh="solo12_hip_fe_fr_collision_1" class="collision"/>
+  <geom mesh="solo12_hip_fe_fr_collision_2" class="collision"/>
+  <geom mesh="solo12_hip_fe_fr_collision_3" class="collision"/>
+  <geom mesh="solo12_hip_fe_fr_collision_4" class="collision"/>
+  <geom mesh="solo12_hip_fe_fr_collision_5" class="collision"/>
+
+</mujoco>
