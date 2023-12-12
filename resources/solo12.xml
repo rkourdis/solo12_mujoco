@@ -9,6 +9,11 @@
     <default class="collision">
       <geom group="3" type="mesh"/>
     </default>
+	<default class="affine">
+      <!-- TODO: Tweak these -->
+	  <position kp="15" ctrlrange="-3.14 3.14" forcerange="-10 10"/>
+    </default>
+	<joint type="hinge" damping="1" frictionloss="0.1"/>
   </default>
   
   <!--
@@ -168,6 +173,21 @@
     </body>
   </worldbody>
 
+  <actuator>
+    <position class="affine" joint="FL_HAA" name="FL_HAA"/>
+    <position class="affine" joint="FL_HFE" name="FL_HFE"/>
+	<position class="affine" joint="FL_KFE" name="FL_KFE"/>
+    <position class="affine" joint="FR_HAA" name="FR_HAA"/>
+    <position class="affine" joint="FR_HFE" name="FR_HFE"/>
+    <position class="affine" joint="FR_KFE" name="FR_KFE"/>
+    <position class="affine" joint="HL_HAA" name="HL_HAA"/>
+    <position class="affine" joint="HL_HFE" name="HL_HFE"/>
+    <position class="affine" joint="HL_KFE" name="HL_KFE"/>
+    <position class="affine" joint="HR_HAA" name="HR_HAA"/>
+    <position class="affine" joint="HR_HFE" name="HR_HFE"/>
+    <position class="affine" joint="HR_KFE" name="HR_KFE"/>
+  </actuator>
+  
   <!-- Collision exclusion from SRDF (robot_properties_solo) -->
   <contact>
     <!-- The base should not block shoulder rotation -->
