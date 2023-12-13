@@ -8,9 +8,9 @@ This repository contains a complete MuJoCo model of the Solo-12 quadruped, inclu
 
 The model has been optimized for _loading time_ and _rendering performance_ by:
 
-- **Removing duplicate geometry** and reusing meshes as much as possible
-- **Simplifying large meshes**
-- Manually **filtering** and removing **internal components**
+- Removing duplicate geometry and reusing meshes as much as possible
+- Simplifying large meshes
+- Manually filtering and removing internal components
 
 **🤗 Please feel free to submit improvements to the model by opening a pull request!**
 
@@ -24,7 +24,7 @@ The model has been optimized for _loading time_ and _rendering performance_ by:
 
 ## Modelling Details
 
-:information_source: This section contains details about how the model was created, for reference. :information_source:
+ℹ️ This section contains details about how the model was created, for reference. ℹ️
 
 ### URDF / SRDF → MJCF
 1. The robot's URDF and SRDF were obtained from the [robot_properties_solo](https://github.com/open-dynamic-robot-initiative/robot_properties_solo) repository.
@@ -76,11 +76,11 @@ MuJoCo calculates collisions by **replacing concave meshes with their convex hul
 
     - A Python script was added to **import and orient `<geom>` elements correctly multiple times** (`generate_model.py`). This is so that duplicated geometry (_eg. actuator modules_) is not exported and loaded multiple times.
       
-      >:warning: MuJoCo's `<include>` element cannot import the same file more than once.
+      >⚠️ MuJoCo's `<include>` element cannot import the same file more than once.
 
 1. The `.ply` meshes were converted to `.obj` with **Meshlab**.
 
-    > :warning: Meshlab creates .obj meshes **with materials**. Other software might assign colours on each vertex which won't be processed by `obj2mjcf`.
+    >⚠️ Meshlab creates .obj meshes **with materials**. Other software might assign colours on each vertex which won't be processed by `obj2mjcf`.
 
 1. For each mesh, Solidworks was used to _figure out the correct orientation and offset from the export origin_. Visuals were **oriented to match collision meshes** using Meshlab.
 
