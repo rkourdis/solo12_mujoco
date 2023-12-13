@@ -12,7 +12,8 @@ The model has been optimized for _loading time_ and _rendering performance_ by:
 - **Simplifying large meshes**
 - Manually **filtering** and removing **internal components**
 
-**_Please feel free to submit improvements to the model by opening a pull request!_**
+**🤗 Please feel free to submit improvements to the model by opening a pull request!**
+
 
 ## Instructions
 1. Install requirements: `pip3 install -r requirements.txt`
@@ -23,7 +24,7 @@ The model has been optimized for _loading time_ and _rendering performance_ by:
 
 ## Modelling Details
 
-:information_source: This section contains more details about the way the model was created for reference.
+:information_source: This section contains details about how the model was created, for reference. :information_source:
 
 ### URDF / SRDF → MJCF
 1. The robot's URDF and SRDF were obtained from the [robot_properties_solo](https://github.com/open-dynamic-robot-initiative/robot_properties_solo) repository.
