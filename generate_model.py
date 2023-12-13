@@ -6,7 +6,7 @@ SRC_FILE  = "resources/solo12.xml"
 DST_FILE = "resources/solo12_gen.xml"
 
 if __name__ == "__main__":
-    # We do custom parsing and inclusion of the elements in order to reuse includes.
+    # We do custom parsing and element import in order to reuse includes.
     # MuJoCo doesn't allow the same file to be included twice in a model, and this
     # solution is simpler than PyMJCF.
     tree = etree.parse(SRC_FILE)
@@ -14,13 +14,17 @@ if __name__ == "__main__":
     # We introduce a custom <include_with_attrs> element which is required to have
     # the "from" attribute with a relative path to a valid .xml file.
     # It optionally has other attributes as well.
+    #
     # When the parser encounters an <include_with_attrs>, it parses the referenced
     # .xml, discards the root element and adds all its children to the original
     # element that owned the <include_with_attrs>.
-    # All attributes other than "from" will be recursively added to
+    #
+    # All attributes (other than "from") will be recursively added to
     # every imported element. Collisions will be overwritten.
-    # Note:
-    #  - One pass is performed therefore recursive imports are not resolved
+    #
+    #  Note:
+    #  - One pass is performed, therefore recursive imports are not resolved
+    
     includes = list(tree.iter("include_with_attrs"))
     
     for include in includes:
