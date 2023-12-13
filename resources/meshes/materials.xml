@@ -29,32 +29,13 @@
     <material name="solo_12_base_material_26" specular="0.2" shininess="0.1" rgba="0.749020 1.000000 1.000000 1.0"/>
     <material name="solo_12_base_material_27" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.501961 1.0"/>
 
-    <!-- solo_lower_leg_v2 -->
     <material name="metal_grey" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
     <material name="pla_orange" specular="0.2" shininess="0.1" rgba="1.000000 0.549020 0.286275 1.0"/>
     <material name="pla_grey" specular="0.2" shininess="0.1" rgba="0.549020 0.549020 0.549020 1.0"/>
-
-    <!-- solo_upper_leg -->
-    <material name="solo_upper_leg_material_0" specular="0.2" shininess="0.1" rgba="0.403922 0.427451 0.486275 1.0"/>
-    <material name="solo_upper_leg_material_1" specular="0.2" shininess="0.1" rgba="0.894118 0.894118 0.894118 1.0"/>
-    <material name="solo_upper_leg_material_2" specular="0.2" shininess="0.1" rgba="0.247059 0.247059 0.247059 1.0"/>
-    <material name="solo_upper_leg_material_3" specular="0.2" shininess="0.1" rgba="1.000000 0.619608 0.639216 1.0"/>
-    <material name="solo_upper_leg_material_4" specular="0.2" shininess="0.1" rgba="0.654902 0.819608 1.000000 1.0"/>
-    <material name="solo_upper_leg_material_5" specular="0.2" shininess="0.1" rgba="1.000000 0.501961 0.501961 1.0"/>
-    <material name="solo_upper_leg_material_6" specular="0.2" shininess="0.1" rgba="0.749020 1.000000 1.000000 1.0"/>
-    <material name="solo_upper_leg_material_7" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
-    <material name="solo_upper_leg_material_8" specular="0.2" shininess="0.1" rgba="0.592157 0.603922 0.709804 1.0"/>
-    <material name="solo_upper_leg_material_9" specular="0.2" shininess="0.1" rgba="0.749020 1.000000 0.749020 1.0"/>
-    <material name="solo_upper_leg_material_10" specular="0.2" shininess="0.1" rgba="0.792157 0.819608 0.929412 1.0"/>
-    <material name="solo_upper_leg_material_11" specular="0.2" shininess="0.1" rgba="0.858824 0.858824 0.858824 1.0"/>
-    <material name="solo_upper_leg_material_12" specular="0.2" shininess="0.1" rgba="0.376471 0.376471 0.376471 1.0"/>
-    <material name="solo_upper_leg_material_13" specular="0.2" shininess="0.1" rgba="1.000000 0.713726 0.219608 1.0"/>
-    <material name="solo_upper_leg_material_14" specular="0.2" shininess="0.1" rgba="0.949020 0.949020 0.949020 1.0"/>
-    <material name="solo_upper_leg_material_15" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 1.000000 1.0"/>
-    <material name="solo_upper_leg_material_16" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.000000 1.0"/>
-    <material name="solo_upper_leg_material_17" specular="0.2" shininess="0.1" rgba="0.956863 1.000000 0.403922 1.0"/>
-    <material name="solo_upper_leg_material_18" specular="0.2" shininess="0.1" rgba="0.992157 1.000000 0.494118 1.0"/>
-    <material name="solo_upper_leg_material_19" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.501961 1.0"/>
+    <material name="pla_white" specular="0.2" shininess="0.1" rgba="0.894118 0.894118 0.894118 1.0"/>
+    <material name="metal_dark" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="metal_gold" specular="0.2" shininess="0.1" rgba="1.000000 0.713726 0.219608 1.0"/>
+    <material name="metal_silver" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 1.000000 1.0"/>
     
     <!-- solo12_hip_fe -->
     <material name="solo12_hip_fe_material_0" specular="0.2" shininess="0.1" rgba="1.000000 0.501961 0.501961 1.0"/>
