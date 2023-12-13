@@ -1,4 +1,4 @@
-<body name="solo_12_base">
+<mujoco model="solo_12_base">
   <geom mesh="solo_12_base_7" material="metal_dark" class="visual"/>
   <geom mesh="solo_12_base_8" material="metal_gold" class="visual"/>
   <geom mesh="solo_12_base_9" material="metal_dark" class="visual"/>
@@ -16,7 +16,6 @@
   <geom mesh="solo_12_base_25" material="metal_silver" class="visual"/>
   <geom mesh="solo_12_base_26" material="metal_grey" class="visual"/>
   <geom mesh="solo_12_base_27" material="pla_grey" class="visual"/>
-  
   <geom mesh="solo_12_base_collision_0" class="collision"/>
   <geom mesh="solo_12_base_collision_1" class="collision"/>
   <geom mesh="solo_12_base_collision_2" class="collision"/>
