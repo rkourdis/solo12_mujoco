@@ -1,34 +1,4 @@
 <materials>
-    <!-- solo_12_base -->
-    <material name="solo_12_base_material_0" specular="0.2" shininess="0.1" rgba="0.549020 0.549020 0.549020 1.0"/>
-    <material name="solo_12_base_material_1" specular="0.2" shininess="0.1" rgba="0.749020 0.749020 0.749020 1.0"/>
-    <material name="solo_12_base_material_2" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 1.000000 1.0"/>
-    <material name="solo_12_base_material_3" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
-    <material name="solo_12_base_material_4" specular="0.2" shininess="0.1" rgba="0.764706 0.000000 0.886275 1.0"/>
-    <material name="solo_12_base_material_5" specular="0.2" shininess="0.1" rgba="0.929412 0.929412 0.929412 1.0"/>
-    <material name="solo_12_base_material_6" specular="0.2" shininess="0.1" rgba="0.403922 0.427451 0.486275 1.0"/>
-    <material name="solo_12_base_material_7" specular="0.2" shininess="0.1" rgba="0.501961 1.000000 0.501961 1.0"/>
-    <material name="solo_12_base_material_8" specular="0.2" shininess="0.1" rgba="1.000000 0.976471 0.121569 1.0"/>
-    <material name="solo_12_base_material_9" specular="0.2" shininess="0.1" rgba="0.627451 0.627451 0.627451 1.0"/>
-    <material name="solo_12_base_material_10" specular="0.2" shininess="0.1" rgba="0.337255 0.337255 0.337255 1.0"/>
-    <material name="solo_12_base_material_11" specular="0.2" shininess="0.1" rgba="0.247059 0.247059 0.247059 1.0"/>
-    <material name="solo_12_base_material_12" specular="0.2" shininess="0.1" rgba="1.000000 0.619608 0.639216 1.0"/>
-    <material name="solo_12_base_material_13" specular="0.2" shininess="0.1" rgba="0.992157 1.000000 0.494118 1.0"/>
-    <material name="solo_12_base_material_14" specular="0.2" shininess="0.1" rgba="0.894118 0.894118 0.894118 1.0"/>
-    <material name="solo_12_base_material_15" specular="0.2" shininess="0.1" rgba="0.749020 1.000000 0.749020 1.0"/>
-    <material name="solo_12_base_material_16" specular="0.2" shininess="0.1" rgba="0.592157 0.603922 0.709804 1.0"/>
-    <material name="solo_12_base_material_17" specular="0.2" shininess="0.1" rgba="0.858824 0.858824 0.858824 1.0"/>
-    <material name="solo_12_base_material_18" specular="0.2" shininess="0.1" rgba="0.376471 0.376471 0.376471 1.0"/>
-    <material name="solo_12_base_material_19" specular="0.2" shininess="0.1" rgba="1.000000 0.713726 0.219608 1.0"/>
-    <material name="solo_12_base_material_20" specular="0.2" shininess="0.1" rgba="0.949020 0.949020 0.949020 1.0"/>
-    <material name="solo_12_base_material_21" specular="0.2" shininess="0.1" rgba="0.792157 0.819608 0.929412 1.0"/>
-    <material name="solo_12_base_material_22" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.000000 1.0"/>
-    <material name="solo_12_base_material_23" specular="0.2" shininess="0.1" rgba="1.000000 0.501961 0.501961 1.0"/>
-    <material name="solo_12_base_material_24" specular="0.2" shininess="0.1" rgba="0.956863 1.000000 0.403922 1.0"/>
-    <material name="solo_12_base_material_25" specular="0.2" shininess="0.1" rgba="0.654902 0.819608 1.000000 1.0"/>
-    <material name="solo_12_base_material_26" specular="0.2" shininess="0.1" rgba="0.749020 1.000000 1.000000 1.0"/>
-    <material name="solo_12_base_material_27" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.501961 1.0"/>
-
     <material name="metal_grey" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
     <material name="pla_orange" specular="0.2" shininess="0.1" rgba="1.000000 0.549020 0.286275 1.0"/>
     <material name="pla_grey" specular="0.2" shininess="0.1" rgba="0.549020 0.549020 0.549020 1.0"/>
@@ -36,5 +6,6 @@
     <material name="metal_dark" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
     <material name="metal_gold" specular="0.2" shininess="0.1" rgba="1.000000 0.713726 0.219608 1.0"/>
     <material name="metal_silver" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 1.000000 1.0"/>
-    
+	<material name="pcb_purple" specular="0.2" shininess="0.1" rgba="0.764706 0.000000 0.886275 1.0"/>
+    <material name="pcb_green" specular="0.2" shininess="0.1" rgba="0.501961 1.000000 0.501961 1.0"/>
 </materials>

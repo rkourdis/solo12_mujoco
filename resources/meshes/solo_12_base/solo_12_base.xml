@@ -1,32 +1,21 @@
 <body name="solo_12_base">
-  <geom mesh="solo_12_base_0" material="solo_12_base_material_27" class="visual"/>
-  <geom mesh="solo_12_base_1" material="solo_12_base_material_26" class="visual"/>
-  <geom mesh="solo_12_base_2" material="solo_12_base_material_25" class="visual"/>
-  <geom mesh="solo_12_base_3" material="solo_12_base_material_24" class="visual"/>
-  <geom mesh="solo_12_base_4" material="solo_12_base_material_23" class="visual"/>
-  <geom mesh="solo_12_base_5" material="solo_12_base_material_22" class="visual"/>
-  <geom mesh="solo_12_base_6" material="solo_12_base_material_21" class="visual"/>
-  <geom mesh="solo_12_base_7" material="solo_12_base_material_20" class="visual"/>
-  <geom mesh="solo_12_base_8" material="solo_12_base_material_19" class="visual"/>
-  <geom mesh="solo_12_base_9" material="solo_12_base_material_18" class="visual"/>
-  <geom mesh="solo_12_base_10" material="solo_12_base_material_17" class="visual"/>
-  <geom mesh="solo_12_base_11" material="solo_12_base_material_16" class="visual"/>
-  <geom mesh="solo_12_base_12" material="solo_12_base_material_15" class="visual"/>
-  <geom mesh="solo_12_base_13" material="solo_12_base_material_14" class="visual"/>
-  <geom mesh="solo_12_base_14" material="solo_12_base_material_13" class="visual"/>
-  <geom mesh="solo_12_base_15" material="solo_12_base_material_12" class="visual"/>
-  <geom mesh="solo_12_base_16" material="solo_12_base_material_11" class="visual"/>
-  <geom mesh="solo_12_base_17" material="solo_12_base_material_10" class="visual"/>
-  <geom mesh="solo_12_base_18" material="solo_12_base_material_9" class="visual"/>
-  <geom mesh="solo_12_base_19" material="solo_12_base_material_8" class="visual"/>
-  <geom mesh="solo_12_base_20" material="solo_12_base_material_7" class="visual"/>
-  <geom mesh="solo_12_base_21" material="solo_12_base_material_6" class="visual"/>
-  <geom mesh="solo_12_base_22" material="solo_12_base_material_5" class="visual"/>
-  <geom mesh="solo_12_base_23" material="solo_12_base_material_4" class="visual"/>
-  <geom mesh="solo_12_base_24" material="solo_12_base_material_3" class="visual"/>
-  <geom mesh="solo_12_base_25" material="solo_12_base_material_2" class="visual"/>
-  <geom mesh="solo_12_base_26" material="solo_12_base_material_1" class="visual"/>
-  <geom mesh="solo_12_base_27" material="solo_12_base_material_0" class="visual"/>
+  <geom mesh="solo_12_base_7" material="metal_dark" class="visual"/>
+  <geom mesh="solo_12_base_8" material="metal_gold" class="visual"/>
+  <geom mesh="solo_12_base_9" material="metal_dark" class="visual"/>
+  <geom mesh="solo_12_base_10" material="metal_dark" class="visual"/>
+  <geom mesh="solo_12_base_13" material="pla_white" class="visual"/>
+  <geom mesh="solo_12_base_15" material="metal_grey" class="visual"/>
+  <geom mesh="solo_12_base_16" material="pla_grey" class="visual"/>
+  <geom mesh="solo_12_base_18" material="metal_grey" class="visual"/>
+  <geom mesh="solo_12_base_19" material="metal_silver" class="visual"/>
+  <geom mesh="solo_12_base_20" material="pcb_green" class="visual"/>
+  <geom mesh="solo_12_base_21" material="metal_grey" class="visual"/>
+  <geom mesh="solo_12_base_22" material="pla_white" class="visual"/>
+  <geom mesh="solo_12_base_23" material="pcb_purple" class="visual"/>
+  <geom mesh="solo_12_base_24" material="metal_dark" class="visual"/>
+  <geom mesh="solo_12_base_25" material="metal_silver" class="visual"/>
+  <geom mesh="solo_12_base_26" material="metal_grey" class="visual"/>
+  <geom mesh="solo_12_base_27" material="pla_grey" class="visual"/>
   
   <geom mesh="solo_12_base_collision_0" class="collision"/>
   <geom mesh="solo_12_base_collision_1" class="collision"/>
