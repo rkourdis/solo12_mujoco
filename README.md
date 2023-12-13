@@ -8,18 +8,22 @@ This repository contains a complete MuJoCo model of the Solo-12 quadruped, inclu
 
 The model has been optimized for _loading time_ and _rendering performance_ by:
 
-- **Removing duplicates** and reusing meshes as much as possible.
-- **Simplifying large meshes** as much as possible.
-- Manually **filtering** and removing **internal components**.
+- **Removing duplicate geometry** and reusing meshes as much as possible
+- **Simplifying large meshes**
+- Manually **filtering** and removing **internal components**
+
+**_Please feel free to submit improvements to the model by opening a pull request!_**
 
 ## Instructions
-1. Install requirements: `pip3 install -r requirements.txt`.
-1. Generate the Solo-12 model: `python3 ./generate_model.py`.
-1. Start MuJoCo: `python3 -m mujoco.viewer`.
-1. Drag-and-drop `scene.xml` to the MuJoCo viewer to load the scene. 
+1. Install requirements: `pip3 install -r requirements.txt`
+1. Generate the Solo-12 model: `python3 ./generate_model.py`
+1. Start MuJoCo: `python3 -m mujoco.viewer`
+1. Drag-and-drop `scene.xml` to the MuJoCo viewer to load the scene
 
 
 ## Modelling Details
+
+:information_source: This section contains more details about the way the model was created for reference.
 
 ### URDF / SRDF → MJCF
 1. The robot's URDF and SRDF were obtained from the [robot_properties_solo](https://github.com/open-dynamic-robot-initiative/robot_properties_solo) repository.
