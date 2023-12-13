@@ -30,9 +30,9 @@
     <material name="solo_12_base_material_27" specular="0.2" shininess="0.1" rgba="1.000000 1.000000 0.501961 1.0"/>
 
     <!-- solo_lower_leg_v2 -->
-    <material name="solo_lower_leg_v2_material_0" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
-    <material name="solo_lower_leg_v2_material_1" specular="0.2" shininess="0.1" rgba="1.000000 0.549020 0.286275 1.0"/>
-    <material name="solo_lower_leg_v2_material_2" specular="0.2" shininess="0.1" rgba="0.549020 0.549020 0.549020 1.0"/>
+    <material name="metal_grey" specular="0.2" shininess="0.1" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="pla_orange" specular="0.2" shininess="0.1" rgba="1.000000 0.549020 0.286275 1.0"/>
+    <material name="pla_grey" specular="0.2" shininess="0.1" rgba="0.549020 0.549020 0.549020 1.0"/>
 
     <!-- solo_upper_leg -->
     <material name="solo_upper_leg_material_0" specular="0.2" shininess="0.1" rgba="0.403922 0.427451 0.486275 1.0"/>
