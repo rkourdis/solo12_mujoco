@@ -28,4 +28,4 @@
   <geom mesh="solo_12_base_collision_9" class="collision"/>
   <geom mesh="solo_12_base_collision_10" class="collision"/>
   <geom mesh="solo_12_base_collision_11" class="collision"/>
-</body>
+</mujoco>

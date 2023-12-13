@@ -1,5 +1,5 @@
 <mujoco model="solo12">
-  <compiler angle="radian" meshdir="meshes/" fusestatic="false"/>
+  <compiler angle="radian" meshdir="resources/meshes/" fusestatic="false"/>
 
   <default>
     <default class="visual">
@@ -17,8 +17,8 @@
   
   <!-- Collision / visual meshes used during the simulation -->
   <asset>
-    <include file="meshes.xml"/>
-    <include file="materials.xml"/>	
+    <include file="resources/meshes.xml"/>
+    <include file="resources/materials.xml"/>	
   </asset>
 
   <!-- Inertial parameters converted to principal axes by MuJoCo compiler -->
@@ -27,7 +27,7 @@
     <body name="base_link">
       <joint type="free"/>
       <inertial pos="-0.00082966 1.05e-06 -0.0006021" quat="-0.00116678 0.706653 0.00115432 0.707559" mass="1.25124" diaginertia="0.0160537 0.0138852 0.00266206"/>
-      <include file="meshes/solo_12_base/solo_12_base.xml"/>
+      <include file="resources/meshes/solo_12_base/solo_12_base.xml"/>
 
       <!-- Front left shoulder  -->
       <body name="FL_SHOULDER" pos="0.2141 0.0875 0">
