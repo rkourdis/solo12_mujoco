@@ -1,6 +1,5 @@
 <mujoco model="solo_12_scene">
-  <compiler angle="radian" meshdir="meshes/solo_12_base" fusestatic="false"/>
-  <include file="solo12.xml"/>
+  <include file="solo12_gen.xml"/>
 
   <visual>
     <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>

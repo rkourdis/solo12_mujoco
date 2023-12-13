@@ -1,0 +1,12 @@
+<mujoco model="solo_lower_leg_v2_left_side">
+  <geom mesh="solo_lower_leg_v2_0" material="solo_lower_leg_v2_material_2" class="visual"/>
+  <geom mesh="solo_lower_leg_v2_1" material="solo_lower_leg_v2_material_1" class="visual"/>
+  <geom mesh="solo_lower_leg_v2_2" material="solo_lower_leg_v2_material_0" class="visual"/>
+  <geom mesh="solo_lower_leg_v2_collision_0" class="collision"/>
+  <geom mesh="solo_lower_leg_v2_collision_1" class="collision"/>
+  <geom mesh="solo_lower_leg_v2_collision_2" class="collision"/>
+  <geom mesh="solo_lower_leg_v2_collision_3" class="collision"/>
+  <geom mesh="solo_lower_leg_v2_collision_4" class="collision"/>
+  <geom mesh="solo_lower_leg_v2_collision_5" class="collision"/>
+
+</mujoco>
