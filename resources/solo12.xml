@@ -1,9 +1,6 @@
 <mujoco model="solo12">
   <compiler angle="radian" meshdir="meshes/" fusestatic="false"/>
 
-  <!-- TODO: Remove this -->
-  <statistic meansize="0.0982686" extent="0.608773" center="0 2.74191e-05 -0.0510751"/>
-
   <default>
     <default class="visual">
       <geom group="2" type="mesh" contype="0" conaffinity="0"/>
@@ -15,19 +12,13 @@
       <!-- TODO: Tweak these -->
       <position kp="15" ctrlrange="-3.14 3.14" forcerange="-10 10"/>
     </default>
-
-      <!-- TODO: Where should this be? -->
-      <joint type="hinge" damping="1" frictionloss="0.1"/>
-  
+    <joint type="hinge" damping="1" frictionloss="0.1"/>
   </default>
   
-  <!--
-        Collision / visual meshes used during the simulation.
-        Retrieved from URDF in robot_properties_solo.
-  -->
+  <!-- Collision / visual meshes used during the simulation -->
   <asset>
-    <include file="meshes/meshes.xml"/>
-    <include file="meshes/materials.xml"/>	
+    <include file="meshes.xml"/>
+    <include file="materials.xml"/>	
   </asset>
 
   <!-- Inertial parameters converted to principal axes by MuJoCo compiler -->
@@ -35,8 +26,6 @@
     <!-- Robot base -->
     <body name="base_link">
       <inertial pos="-0.00082966 1.05e-06 -0.0006021" quat="-0.00116678 0.706653 0.00115432 0.707559" mass="1.25124" diaginertia="0.0160537 0.0138852 0.00266206"/>
-
-      <!-- <geom type="mesh" rgba="0.8 0.8 0.8 1" mesh="solo_12_base"/> -->
       <include file="meshes/solo_12_base/solo_12_base.xml"/>
 
       <!-- Front left shoulder  -->
@@ -57,9 +46,7 @@
             <joint name="FL_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
             <include_with_attrs from="meshes/solo_lower_leg_v2/solo_lower_leg_v2.xml"/>
 
-            <!-- TODO: Figure out what happened to FL_ANKLE --> 
-            <!-- TODO: I think this is the contact position with the ground? --> 
-            <!-- Front left foot, massless -->
+            <!-- Front left foot pose -->
             <body name="FL_FOOT" pos="0 0.009 -0.16">
               <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
             </body>
@@ -87,7 +74,7 @@
             <joint name="FR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
             <include_with_attrs from="meshes/solo_lower_leg_v2/solo_lower_leg_v2.xml" euler="0.0 0.0 3.1415"/>
 
-            <!-- Front right foot, massless -->
+            <!-- Front right foot pose -->
             <body name="FR_FOOT" pos="0 -0.009 -0.16">
               <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
             </body>
@@ -115,7 +102,7 @@
             <joint name="HL_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
             <include_with_attrs from="meshes/solo_lower_leg_v2/solo_lower_leg_v2.xml"/>
 
-            <!-- Hind left foot, massless  -->
+            <!-- Hind left foot pose  -->
             <body name="HL_FOOT" pos="0 0.009 -0.16">
               <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
             </body>
@@ -141,7 +128,7 @@
             <joint name="HR_KFE" pos="0 0 0" axis="0 1 0" range="-10 10"/>
             <include_with_attrs from="meshes/solo_lower_leg_v2/solo_lower_leg_v2.xml" euler="0.0 0.0 3.1415"/>
 
-            <!-- Hind right foot, massless  -->
+            <!-- Hind right foot pose  -->
             <body name="HR_FOOT" pos="0 -0.009 -0.16">
               <inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
             </body>
@@ -187,5 +174,4 @@
     <exclude body1="HL_LOWER_LEG" body2="HL_UPPER_LEG"/>
     <exclude body1="HR_LOWER_LEG" body2="HR_UPPER_LEG"/>
   </contact>
-
 </mujoco>

@@ -1,0 +1,11 @@
+<materials>
+    <material name="metal_grey" specular="0.2" shininess="0.3" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="pla_orange" specular="0.05" shininess="0.05" rgba="1.000000 0.549020 0.286275 1.0"/>
+    <material name="pla_grey" specular="0.05" shininess="0.05" rgba="0.549020 0.549020 0.549020 1.0"/>
+    <material name="pla_white" specular="0.05" shininess="0.05" rgba="0.894118 0.894118 0.894118 1.0"/>
+    <material name="metal_dark" specular="0.2" shininess="0.2" rgba="0.501961 0.501961 0.501961 1.0"/>
+    <material name="metal_gold" specular="0.3" shininess="0.4" rgba="1.000000 0.713726 0.219608 1.0"/>
+    <material name="metal_silver" specular="0.3" shininess="0.4" rgba="1.000000 1.000000 1.000000 1.0"/>
+	<material name="pcb_purple" specular="0.05" shininess="0.05" rgba="0.764706 0.000000 0.886275 1.0"/>
+    <material name="pcb_green" specular="0.05" shininess="0.05" rgba="0.501961 1.000000 0.501961 1.0"/>
+</materials>
