@@ -18,7 +18,7 @@ The model has been optimized for _loading time_ and _rendering performance_ by:
 ## Instructions
 1. Install requirements: `pip3 install -r requirements.txt`
 1. Generate the Solo-12 model: `python3 ./generate_model.py`
-    - This will autogenerate an `.xml` file with the geometry of the four legs imported and correctly oriented
+    - This will write an `.xml` file with the geometry of the four legs imported and correctly oriented
 1. Start MuJoCo: `python3 -m mujoco.viewer`
 1. Drag-and-drop `scene.xml` to the MuJoCo viewer to load the scene
 
