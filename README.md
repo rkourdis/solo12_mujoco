@@ -18,6 +18,7 @@ The model has been optimized for _loading time_ and _rendering performance_ by:
 ## Instructions
 1. Install requirements: `pip3 install -r requirements.txt`
 1. Generate the Solo-12 model: `python3 ./generate_model.py`
+    - This will autogenerate an `.xml` file with the geometry of the four legs imported and correctly oriented
 1. Start MuJoCo: `python3 -m mujoco.viewer`
 1. Drag-and-drop `scene.xml` to the MuJoCo viewer to load the scene
 
@@ -71,10 +72,10 @@ MuJoCo calculates collisions by **replacing concave meshes with their convex hul
 ---
 
 ### Visual Meshes
-1. The robot was loaded in Solidworks and coloured according to the PLA colours I have at home :smile: ([source](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/quadruped_robot_12dof_v1/solidworks_files/quadruped_12dof_v1.zip)).
+1. The robot was loaded in Solidworks and coloured according to the _PLA colours I have at home_ :smile: ([source](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/quadruped_robot_12dof_v1/solidworks_files/quadruped_12dof_v1.zip)).
 1. For each collision mesh, the appropriate visual mesh was **exported** in `.ply` format.
 
-    - A Python script was added to **import and orient `<geom>` elements correctly multiple times** (`generate_model.py`). This is so that duplicated geometry (_eg. actuator modules_) is not exported and loaded multiple times.
+    - A Python script was added to **import and orient `<geom>` elements  multiple times** (`generate_model.py`). This is so that duplicated geometry (_eg. actuator modules_) is not saved and loaded from disk more than once.
       
       >⚠️ MuJoCo's `<include>` element cannot import the same file more than once.
 
@@ -107,3 +108,5 @@ MuJoCo calculates collisions by **replacing concave meshes with their convex hul
 - A `<joint type="free">` was added so the robot's base is free floating.
 
 - Joint position actuators were added for each joint with test `Kp` values.
+
+- A skybox, floor and lights were added (_see [this scene](https://github.com/google-deepmind/mujoco_menagerie/blob/main/anybotics_anymal_b/scene.xml) from the MuJoCo Menagerie_).
